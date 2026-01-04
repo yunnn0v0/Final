@@ -1,0 +1,59 @@
+/* ===== 隱藏 checkbox ===== */
+#menu-toggle {
+  display: none;
+}
+
+/* ===== 目錄按鈕 ===== */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  background: #111;
+  color: #00bcd4;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ===== 側邊目錄 ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  padding-top: 80px;
+  transform: translateX(-260px); /* 一開始藏起來 */
+  transition: transform 0.4s ease;
+  z-index: 90;
+}
+
+/* ===== 目錄內容 ===== */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: #eee;
+  text-decoration: none;
+  padding: 12px 24px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(0, 188, 212, 0.2);
+}
+
+/* ===== 打開目錄 ===== */
+#menu-toggle:checked + .menu-btn + .sidebar {
+  transform: translateX(0);
+}

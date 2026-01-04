@@ -9,11 +9,15 @@
 
   <link rel="apple-touch-icon" href="柯南-圖標.jpg">
   <link rel="shortcut icon" href="柯南-圖標.jpg">
-
-  <link rel="stylesheet" href="plot.CSS">
-
-  <script src="background.js" defer></script>
-  <script src="control.js" defer></script>
+  
+    <style>
+    body,html
+    {
+      background-image:url("劇場版圖片/頁面主背景.webp");
+      background-repeat:repeat-y; 
+    }
+    </style>
+  <link rel="stylesheet" href="assets/CSS/plot.CSS">
 
 </head>
 
@@ -72,241 +76,310 @@
       </header>
     </div>
 
-  <div class="music-player">
-    <audio id="audio" controls></audio>
 
-    <div class="playlist">
-      <button data-src="music/movie1.mp3">第1部主題曲</button>
-      <button data-src="music/movie2.mp3">第2部主題曲</button>
-      <button data-src="music/movie3.mp3">第3部主題曲</button>
-      <button data-src="music/movie4.mp3">第4部主題曲</button>
-      <button data-src="music/movie5.mp3">第5部主題曲</button>
-      <button data-src="music/movie6.mp3">第6部主題曲</button>
-      <button data-src="music/movie7.mp3">第7部主題曲</button>
-      <button data-src="music/movie8.mp3">第8部主題曲</button>
-      <button data-src="music/movie9.mp3">第9部主題曲</button>
-      <button data-src="music/movie10.mp3">第10部主題曲</button>
-      <button data-src="music/movie11.mp3">第11部主題曲</button>
-      <button data-src="music/movie12.mp3">第12部主題曲</button>
-      <button data-src="music/movie13.mp3">第13部主題曲</button>
-      <button data-src="music/movie1.mp3">第14部主題曲</button>
-      <button data-src="music/movie2.mp3">第15部主題曲</button>
-      <button data-src="music/movie3.mp3">第16部主題曲</button>
-      <button data-src="music/movie4.mp3">第17部主題曲</button>
-      <button data-src="music/movie5.mp3">第18部主題曲</button>
-      <button data-src="music/movie6.mp3">第19部主題曲</button>
-      <button data-src="music/movie7.mp3">第20部主題曲</button>
-      <button data-src="music/movie8.mp3">第21部主題曲</button>
-      <button data-src="music/movie9.mp3">第22部主題曲</button>
-      <button data-src="music/movie10.mp3">第23部主題曲</button>
-      <button data-src="music/movie11.mp3">第25部主題曲</button>
-      <button data-src="music/movie12.mp3">第26部主題曲</button>
-      <button data-src="music/movie13.mp3">第27部主題曲</button>
-    </div>
-    
   <!-- ====== 劇場版段落 ====== -->
 
-  <section id="movie1" class="movie-section fade-in" style="background-image:url('劇場版圖片/引爆摩天樓.webp')">
-    <div class="overlay">
-      <h2>引爆摩天樓 (1997)</h2>
-      <p>柯南首次登上大銀幕，面對炸彈危機與新一的記憶交錯，展開緊張的推理行動。</p>
+<section id="movie1" class="movie-section fade-in" style="background-image:url('劇場版圖片/引爆摩天樓.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="movie1/movie1.mp3"></audio>
     </div>
-  </section>
+    <h2>引爆摩天樓 (1997)</h2>
+    <p>柯南首次登上大銀幕，面對炸彈危機與新一的記憶交錯，展開緊張的推理行動。</p>
+  </div>
+</section>
 
-  <section id="movie2" class="movie-section fade-in" style="background-image:url('劇場版圖片/第14號獵物.webp')">
-    <div class="overlay">
-      <h2>第14號獵物 (1998)</h2>
-      <p>與毛利小五郎有關的舊案重現，當年的罪與罰在一場連環復仇中揭開。</p>
+<section id="movie2" class="movie-section fade-in" style="background-image:url('劇場版圖片/第14號獵物.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="movie1/movie2.mp3"></audio>
     </div>
-  </section>
+    <h2>第14號獵物 (1998)</h2>
+    <p>與毛利小五郎有關的舊案重現，當年的罪與罰在一場連環復仇中揭開。</p>
+  </div>
+</section>
 
-  <section id="movie3" class="movie-section fade-in" style="background-image:url('劇場版圖片/世紀末的魔術師.webp')">
-    <div class="overlay">
-      <h2>世紀末的魔術師 (1999)</h2>
-      <p>怪盜基德與神秘的羅曼諾夫王冠寶石相遇，揭開歷史與陰謀的序幕。</p>
+<section id="movie3" class="movie-section fade-in" style="background-image:url('劇場版圖片/世紀末的魔術師.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="movie1/movie3.mp3"></audio>
     </div>
-  </section>
+    <h2>世紀末的魔術師 (1999)</h2>
+    <p>怪盜基德與神秘的羅曼諾夫王冠寶石相遇，揭開歷史與陰謀的序幕。</p>
+  </div>
+</section>
 
-  <section id="movie4" class="movie-section fade-in" style="background-image:url('劇場版圖片/瞳孔中的暗殺者.webp')">
-    <div class="overlay">
-      <h2>瞳孔中的暗殺者 (2000)</h2>
-      <p>警察連續遇襲，小蘭失憶，柯南必須在她的記憶深處找出真相。</p>
+<section id="movie4" class="movie-section fade-in" style="background-image:url('劇場版圖片/瞳孔中的暗殺者.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie4.mp3"></audio>
     </div>
-  </section>
+    <h2>瞳孔中的暗殺者 (2000)</h2>
+    <p>警察連續遇襲，小蘭失憶，柯南必須在她的記憶深處找出真相。</p>
+  </div>
+</section>
 
-  <section id="movie5" class="movie-section fade-in" style="background-image:url('劇場版圖片/往天國的倒數計時.webp')">
-    <div class="overlay">
-      <h2>往天國的倒數計時 (2001)</h2>
-      <p>灰原哀與黑衣組織再度正面交鋒，一場爆炸倒數，生死只在一線間。</p>
+<section id="movie5" class="movie-section fade-in" style="background-image:url('劇場版圖片/往天國的倒數計時.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie5.mp3"></audio>
     </div>
-  </section>
+    <h2>往天國的倒數計時 (2001)</h2>
+    <p>灰原哀與黑衣組織再度正面交鋒，一場爆炸倒數，生死只在一線間。</p>
+  </div>
+</section>
 
-  <section id="movie6" class="movie-section fade-in" style="background-image:url('劇場版圖片/貝克街的亡靈.webp')">
-    <div class="overlay">
-      <h2>貝克街的亡靈 (2002)</h2>
-      <p>在虛擬遊戲世界中展開致命推理的冒險。柯南必須在虛擬與現實交錯的空間裡，揭開連環謎團。</p>
+<section id="movie6" class="movie-section fade-in" style="background-image:url('劇場版圖片/貝克街的亡靈.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie6.mp3"></audio>
     </div>
-  </section>
+    <h2>貝克街的亡靈 (2002)</h2>
+    <p>在虛擬與現實交錯的世界中，柯南展開致命的推理冒險。</p>
+  </div>
+</section>
 
-  <section id="movie7" class="movie-section fade-in" style="background-image:url('劇場版圖片/迷宮的十字路口.webp')">
-    <div class="overlay">
-      <h2>迷宮的十字路口 (2003)</h2>
-      <p>京都篇開啟，平次與和葉的羈絆在古都之謎中更顯深刻。</p>
+<section id="movie7" class="movie-section fade-in" style="background-image:url('劇場版圖片/迷宮的十字路口.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie7.mp3"></audio>
     </div>
-  </section>
+    <h2>迷宮的十字路口 (2003)</h2>
+    <p>京都篇揭幕，平次與和葉的羈絆在古都謎案中更加深刻。</p>
+  </div>
+</section>
 
-  <section id="movie8" class="movie-section fade-in" style="background-image:url('劇場版圖片/銀翼的奇術師.jpg')">
-    <div class="overlay">
-      <h2>銀翼的奇術師 (2004)</h2>
-      <p>空中推理對決，柯南與怪盜基德在飛機上演智慧與勇氣之戰。</p>
+<section id="movie8" class="movie-section fade-in" style="background-image:url('劇場版圖片/銀翼的奇術師.jpg')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie8.mp3"></audio>
     </div>
-  </section>
+    <h2>銀翼的奇術師 (2004)</h2>
+    <p>高空中的推理對決，柯南與怪盜基德在飛機上正面交鋒。</p>
+  </div>
+</section>
 
-  <section id="movie9" class="movie-section fade-in" style="background-image:url('劇場版圖片/水平線上的陰謀.webp')">
-    <div class="overlay">
-      <h2>水平線上的陰謀 (2005)</h2>
-      <p>豪華郵輪上的密室殺人，波濤下的陰謀逐步浮現。</p>
+<section id="movie9" class="movie-section fade-in" style="background-image:url('劇場版圖片/水平線上的陰謀.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie9.mp3"></audio>
     </div>
-  </section>
+    <h2>水平線上的陰謀 (2005)</h2>
+    <p>豪華郵輪上的密室殺人事件，真相在波濤之下浮現。</p>
+  </div>
+</section>
 
-  <section id="movie10" class="movie-section fade-in" style="background-image:url('劇場版圖片/偵探們的鎮魂歌.webp')">
-    <div class="overlay">
-      <h2>偵探們的鎮魂歌 (2006)</h2>
-      <p>少年偵探團被挾持，柯南必須在時限內解開案件拯救眾人。</p>
+<section id="movie10" class="movie-section fade-in" style="background-image:url('劇場版圖片/偵探們的鎮魂歌.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie10.mp3"></audio>
     </div>
-  </section>
+    <h2>偵探們的鎮魂歌 (2006)</h2>
+    <p>多名偵探被捲入限時遊戲，柯南必須在倒數中找出真相。</p>
+  </div>
+</section>
 
-  <section id="movie11" class="movie-section fade-in" style="background-image:url('劇場版圖片/紺碧之棺.jpg')">
-    <div class="overlay">
-      <h2>紺碧之棺 (2007)</h2>
-      <p>尋找傳說中的海底寶藏，柯南潛入深海揭開真相。</p>
-   </div>
-  </section>
-
-  <section id="movie12" class="movie-section fade-in" style="background-image:url('劇場版圖片/戰慄的樂譜.webp')">
-    <div class="overlay">
-     <h2>戰慄的樂譜 (2008)</h2>
-     <p>音樂廳的爆炸危機，音符背後隱藏著致命的線索。</p>
-   </div>
-  </section>
-
-  <section id="movie13" class="movie-section fade-in" style="background-image:url('劇場版圖片/漆黑的追蹤者.webp')">
-    <div class="overlay">
-      <h2>漆黑的追蹤者 (2009)</h2>
-      <p>黑衣組織再現身影，柯南迎來正面對決。</p>
+<section id="movie11" class="movie-section fade-in" style="background-image:url('劇場版圖片/紺碧之棺.jpg')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie11.mp3"></audio>
     </div>
-  </section>
+    <h2>紺碧之棺 (2007)</h2>
+    <p>沉睡在海底的傳說寶藏，引發一連串危險事件。</p>
+  </div>
+</section>
 
-  <section id="movie14" class="movie-section fade-in" style="background-image:url('劇場版圖片/天空的劫難船.webp')">
-    <div class="overlay">
-     <h2>天空的劫難船 (2010)</h2>
-      <p>飛艇上的致命病毒與空中戰鬥，挑戰極限推理。</p>
+<section id="movie12" class="movie-section fade-in" style="background-image:url('劇場版圖片/戰慄的樂譜.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie12.mp3"></audio>
     </div>
-  </section>
+    <h2>戰慄的樂譜 (2008)</h2>
+    <p>音樂廳爆炸危機，音符中暗藏致命線索。</p>
+  </div>
+</section>
 
-  <section id="movie15" class="movie-section fade-in" style="background-image:url('劇場版圖片/沉默的15分鐘.webp')">
-    <div class="overlay">
-      <h2>沉默的15分鐘 (2011)</h2>
-      <p>雪地隧道事故與冰封的記憶，揭開一場被埋藏的陰謀。</p>
+<section id="movie13" class="movie-section fade-in" style="background-image:url('劇場版圖片/漆黑的追蹤者.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie13.mp3"></audio>
     </div>
-  </section>
+    <h2>漆黑的追蹤者 (2009)</h2>
+    <p>黑衣組織再度現身，柯南迎來正面衝突。</p>
+  </div>
+</section>
 
-  <section id="movie16" class="movie-section fade-in" style="background-image:url('劇場版圖片/第11位前鋒.webp')">
-    <div class="overlay">
-      <h2>第11位前鋒 (2012)</h2>
-      <p>足球與爆炸交織的案件，柯南必須在比賽中阻止悲劇。</p>
+<section id="movie14" class="movie-section fade-in" style="background-image:url('劇場版圖片/天空的劫難船.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie14.mp3"></audio>
     </div>
-  </section>
+    <h2>天空的劫難船 (2010)</h2>
+    <p>飛艇上的病毒危機，推理與行動同步展開。</p>
+  </div>
+</section>
 
-  <section id="movie17" class="movie-section fade-in" style="background-image:url('劇場版圖片/絕海的偵探.webp')">
-    <div class="overlay">
-      <h2>絕海的偵探 (2013)</h2>
-      <p>潛水艦內的情報戰，柯南與自衛隊共同破解機密。</p>
+<section id="movie15" class="movie-section fade-in" style="background-image:url('劇場版圖片/沉默的15分鐘.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie15.mp3"></audio>
     </div>
-  </section>
+    <h2>沉默的15分鐘 (2011)</h2>
+    <p>雪地隧道事故，封印的真相逐步甦醒。</p>
+  </div>
+</section>
 
-  <section id="movie18" class="movie-section fade-in" style="background-image:url('劇場版圖片/異次元的狙擊手.webp')">
-    <div class="overlay">
-      <h2>異次元的狙擊手 (2014)</h2>
-      <p>神秘狙擊手現身東京塔，案件背後牽連國際陰謀。</p>
+<section id="movie16" class="movie-section fade-in" style="background-image:url('劇場版圖片/第11位前鋒.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie16.mp3"></audio>
     </div>
-  </section>
+    <h2>第11位前鋒 (2012)</h2>
+    <p>足球賽場上的爆炸威脅，時間一分一秒流逝。</p>
+  </div>
+</section>
 
-  <section id="movie19" class="movie-section fade-in" style="background-image:url('劇場版圖片/業火的向日葵.webp')">
-    <div class="overlay">
-     <h2>業火的向日葵 (2015)</h2>
-      <p>梵谷名畫與爆炸案交錯，怪盜基德與柯南再度交鋒。</p>
+<section id="movie17" class="movie-section fade-in" style="background-image:url('劇場版圖片/絕海的偵探.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie17.mp3"></audio>
     </div>
-  </section>
+    <h2>絕海的偵探 (2013)</h2>
+    <p>潛艦中的情報戰，真相被層層封鎖。</p>
+  </div>
+</section>
 
- <section id="movie20" class="movie-section fade-in" style="background-image:url('劇場版圖片/純黑的惡夢.webp')">
-    <div class="overlay">
-      <h2>純黑的惡夢 (2016)</h2>
-      <p>黑衣組織的陰影籠罩全城。當記憶與真相交錯，正義與邪惡的界線愈加模糊。</p>
+<section id="movie18" class="movie-section fade-in" style="background-image:url('劇場版圖片/異次元的狙擊手.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie18.mp3"></audio>
     </div>
-  </section>
+    <h2>異次元的狙擊手 (2014)</h2>
+    <p>東京塔上的狙擊事件，牽動國際陰謀。</p>
+  </div>
+</section>
 
-  <section id="movie21" class="movie-section fade-in" style="background-image:url('劇場版圖片/唐紅的戀歌.webp')">
-    <div class="overlay">
-      <h2>唐紅的戀歌 (2017)</h2>
-      <p>平次與和葉的愛情考驗，古老的歌牌大賽揭開真相。</p>
+<section id="movie19" class="movie-section fade-in" style="background-image:url('劇場版圖片/業火的向日葵.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie19.mp3"></audio>
     </div>
-  </section>
+    <h2>業火的向日葵 (2015)</h2>
+    <p>名畫爭奪戰，基德與柯南再度交鋒。</p>
+  </div>
+</section>
 
-  <section id="movie22" class="movie-section fade-in" style="background-image:url('劇場版圖片/零的執行人.webp')">
-    <div class="overlay">
-      <h2>零的執行人 (2018)</h2>
-      <p>一場爆炸案背後隱藏著公安與法律的矛盾，安室透與柯南各自追尋著自己的「正義」。</p>
+<section id="movie20" class="movie-section fade-in" style="background-image:url('劇場版圖片/純黑的惡夢.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie20.mp3"></audio>
     </div>
-  </section>
+    <h2>純黑的惡夢 (2016)</h2>
+    <p>記憶與正義交錯，黑衣組織的陰影籠罩全城。</p>
+  </div>
+</section>
 
-  <section id="movie23" class="movie-section fade-in" style="background-image:url('劇場版圖片/紺青之拳.webp')">劇場版圖片/劇場版圖片/劇場版圖片/劇場版圖片/
-    <div class="overlay">
-      <h2>紺青之拳 (2019)</h2>
-      <p>基德與京極真於新加坡激戰，柯南展開跨國推理。</p>
+<section id="movie21" class="movie-section fade-in" style="background-image:url('劇場版圖片/唐紅的戀歌.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie21.mp3"></audio>
     </div>
-  </section>
+    <h2>唐紅的戀歌 (2017)</h2>
+    <p>歌牌對決中，平次與和葉的感情迎來考驗。</p>
+  </div>
+</section>
 
-  <section id="movie24" class="movie-section fade-in" style="background-image:url('劇場版圖片/緋色的彈丸.webp')">
-    <div class="overlay">
-      <h2>緋色的彈丸 (2021)</h2>
-      <p>世紀運動會揭幕在即，神秘的「真空超電導子彈列車」引發危機。</p>
+<section id="movie22" class="movie-section fade-in" style="background-image:url('劇場版圖片/零的執行人.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie22.mp3"></audio>
     </div>
-  </section>
+    <h2>零的執行人 (2018)</h2>
+    <p>公安、法律與正義的衝突全面爆發。</p>
+  </div>
+</section>
 
-  <section id="movie25" class="movie-section fade-in" style="background-image:url('劇場版圖片/萬聖節的新娘.webp')">
-    <div class="overlay">
-      <h2>萬聖節的新娘 (2022)</h2>
-    <p>松田陣平的過去重現，婚禮背後潛藏炸彈陰謀。</p>
+<section id="movie23" class="movie-section fade-in" style="background-image:url('劇場版圖片/紺青之拳.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie23.mp3"></audio>
+    </div>
+    <h2>紺青之拳 (2019)</h2>
+    <p>新加坡篇章，跨國對決正式展開。</p>
+  </div>
+</section>
+
+<section id="movie24" class="movie-section fade-in" style="background-image:url('劇場版圖片/緋色的彈丸.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie24.mp3"></audio>
+    </div>
+    <h2>緋色的彈丸 (2021)</h2>
+    <p>世紀運動會背後，危機悄然逼近。</p>
+  </div>
+</section>
+
+<section id="movie25" class="movie-section fade-in" style="background-image:url('劇場版圖片/萬聖節的新娘.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie25.mp3"></audio>
+    </div>
+    <h2>萬聖節的新娘 (2022)</h2>
+    <p>婚禮與炸彈交錯，過去的真相浮現。</p>
   </div>
 </section>
 
 <section id="movie26" class="movie-section fade-in" style="background-image:url('劇場版圖片/黑鐵的魚影.webp')">
   <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie26.mp3"></audio>
+    </div>
     <h2>黑鐵的魚影 (2023)</h2>
-    <p>海底監視設施「太平洋浮標」上演情報與友情的交錯。</p>
+    <p>海底設施中，情報與友情交織。</p>
   </div>
 </section>
 
 <section id="movie27" class="movie-section fade-in" style="background-image:url('劇場版圖片/100萬美元的五稜星.webp')">
   <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie27.mp3"></audio>
+    </div>
     <h2>100萬美元的五稜星 (2024)</h2>
-    <p>北海道篇登場，基德再度出現，五稜星的祕密揭曉。</p>
+    <p>北海道舞台，五稜星的秘密揭曉。</p>
   </div>
 </section>
 
 <section id="movie28" class="movie-section fade-in" style="background-image:url('劇場版圖片/獨眼的殘像.webp')">
   <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie28.mp3"></audio>
+    </div>
+    <h2>獨眼的殘像 (2025)</h2>
+    <p>全新篇章揭幕，宿命敵人現身。</p>
+  </div>
+</section>
+
+<!-- 中間 movie6 ～ movie27 全部照這個結構即可 -->
+
+<section id="movie28" class="movie-section fade-in" style="background-image:url('劇場版圖片/獨眼的殘像.webp')">
+  <div class="overlay">
+    <div class="music-player">
+      <audio controls src="music/movie28.mp3"></audio>
+    </div>
     <h2>獨眼的殘像 (2025)</h2>
     <p>全新篇章揭幕，黑暗中潛伏的宿命敵人現身。</p>
   </div>
 </section>
 
-  <footer>
-    ※ 本網站僅供教學使用，所有圖片與角色版權歸原作者及製作公司所有。
-  </footer>
 
-  <script src="player.js"></script>
+    <footer>
+      ※ 本網站僅供教學使用，所有圖片與角色版權歸原作者及製作公司所有。
+    </footer>
+  </div>
+</div>
+
+<script src="assets/JS/background.JS"></script>
+<script src="assets/JS/player.js"></script>
 
 </body>
 </html>

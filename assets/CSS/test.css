@@ -1,0 +1,191 @@
+/* ===== 整體 ===== */
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: "Noto Sans TC", sans-serif;
+  scroll-behavior: smooth;
+  background: url("頁面主背景.webp") no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  position: relative; /* 確保內部絕對定位元素不跑掉 */
+}
+
+/* ===== 目錄按鈕 ===== */
+#menu-toggle { display: none; }
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 15; /* 提高層級，蓋在側邊欄上方 */
+  border: 1px solid #00bcd4;
+  transition: width 0.3s, padding 0.3s;
+  width: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.menu-btn span {
+  opacity: 0;
+  margin-left: 5px;
+  transition: opacity 0.3s;
+}
+
+.menu-btn:hover {
+  width: 160px;
+  padding: 10px 15px;
+}
+
+.menu-btn:hover span {
+  opacity: 1;
+}
+
+/* ===== 側邊目錄 ===== */
+.sidebar {
+  width: 220px;
+  background: rgba(0,0,0,0.85);
+  border-right: 2px solid #00bcd4;
+  padding-top: 80px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-240px);
+  transition: transform 0.4s ease;
+  z-index: 10;
+}
+
+#menu-toggle:checked + .menu-btn + .sidebar {
+  transform: translateX(0);
+}
+
+.sidebar h3 {
+  text-align: center;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 200px;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #00bcd4;
+}
+
+/* ===== 主內容 ===== */
+.main-content {
+  flex: 1;
+  margin-left: 0; /* 讓主內容不要被側邊欄遮住 */
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  color: #e0e0e0;
+  position: relative;
+  z-index: 5;
+}
+
+/* ===== 頁首 ===== */
+header {
+  text-align: center;
+  background: rgba(10,10,10,0.8);
+  padding: 25px 0;
+  border-bottom: 2px solid #ff3b3b;
+  color: #00bcd4;
+  text-shadow: 0 0 8px rgba(0,188,212,0.6);
+}
+
+/* ===== 側邊目錄 ===== */
+.sidebar {
+  z-index: 20; /* 提高層級，確保浮在主內容上 */
+  background: rgba(0,0,0,0.95); /* 讓背景更明顯 */
+}
+
+/* ===== 劇場版區塊 ===== */
+.movie-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 6px solid #00bcd4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,188,212,0.3);
+}
+
+/* overlay 小框格 */
+.overlay {
+  position: relative; 
+  z-index: 5; /* 確保蓋在背景上 */
+  background: rgba(0,0,0,0.8); /* 增加透明度，文字更清楚 */
+  color: #eee;
+  padding: 20px;
+  border-left: 0.5em solid #00bcd4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* 音樂播放器 */
+.music-player {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.playlist button.active {
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* ===== 響應式 ===== */
+@media (max-width:768px){
+  .movie-section{height:300px;}
+  .overlay h2{font-size:1.5em;}
+  .overlay p{font-size:0.95em;}
+}
+
+@media (max-width:480px){
+  .movie-section{height:260px;}
+  .overlay h2{font-size:1.2em;}
+  .overlay p{font-size:0.9em;}
+}
+
+/* ===== 頁尾 ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(10,10,10,0.8);
+  border-top: 2px solid #ff3b3b;
+  font-size: 0.9em;
+  color: #aaa;
+}
